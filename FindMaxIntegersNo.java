@@ -1,10 +1,10 @@
 
-//Given three integers find maximum,ensured test code has passed test case
+//Given three float find maximum,ensured test code has passed test case
 
 public class FindMaxIntegersNo {
 
-	public static Integer findMax(Integer x, Integer y, Integer z) {
-        int max = x; // assume x is initially the largest
+	public static float findMax(Float x, Float y, Float z) {
+        Float max = x; // assume x is initially the largest
 
         if (y.compareTo(max) > 0)
             max = y; // y is the largest so far
@@ -18,16 +18,16 @@ public class FindMaxIntegersNo {
 
     public static void main(String args[]) {
     	//TC1. 1 max no. at first
-        Integer int1 = 99,int2 = 80,int3 = 36;
-        Integer max = findMax(int1,int2,int3);
+        float float1 = 99.25f,float2 = 80.2f, float3 = 36.4f;
+        float max1 = findMax(float1,float2,float3);
 
         //TC1 .2 max no. at second
-        Integer int4 = 17,int5 = 85,int6 = 50;
-        Integer max1 = findMax(int4,int5,int6);
+        float float4 = 17.6f,float5 = 85.5f,float6 = 50.5f;
+        float max2 = findMax(float4,float5,float6);
 
         //TC1. 3 max no. at third
-        Integer int7 = 30,int8 = 35,int9 = 76;
-        Integer max2 = findMax(int7,int8,int9);
+        float float7 = 30.1f,float8 = 35.3f,float9 = 76.2f;
+        float max3 = findMax(float7,float8,float9);
     }
 
 }
@@ -36,9 +36,8 @@ public class FindMaxIntegersNo {
 /*
 OUTPUT
 
-The max of three numbers 99 80 36 is : 99 
-The max of three numbers 17 85 50 is : 85 
-The max of three numbers 30 35 76 is : 76
-
+The max of three numbers 99.25 80.2 36.4 is : 99.25 
+The max of three numbers 17.6 85.5 50.5 is : 85.5 
+The max of three numbers 30.1 35.3 76.2 is : 76.2 
 
 */
