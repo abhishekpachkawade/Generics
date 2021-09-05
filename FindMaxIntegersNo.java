@@ -1,5 +1,5 @@
 
-//Given three String find maximum,ensured test code has passed test case
+//Refactor 1 all the 3 to One Generic Method and find the maximum
 
 public class FindMaxIntegersNo {
 
@@ -18,7 +18,9 @@ public class FindMaxIntegersNo {
 
     public static void main(String args[]) {
     	//print statement and passing string value
-    	System.out.printf("\nMaximum of %s,%s and %s is %s","pear", "apple", "orange",maximum( "pear", "apple", "orange"));
+    	System.out.printf("\nMaximum of %d, %d and %d is %d", 7, 6, 5, maximum(7, 6, 5));
+        System.out.printf("\nMaximum of %.1f, %.1f and %.1f is %.1f", 4.6, 8.9, 6.7, maximum(4.6,8.9, 6.7));
+    	System.out.printf("\nMaximum of %s,%s and %s is %s","pear", "apple", "orange",maximum( "orange", "apple", "pear"));
     	  	
     }
 
@@ -28,6 +30,7 @@ public class FindMaxIntegersNo {
 /*
 OUTPUT
 
+Maximum of 7, 6 and 5 is 7
+Maximum of 4.6, 8.9 and 6.7 is 8.9
 Maximum of pear,apple and orange is pear
-
 */
