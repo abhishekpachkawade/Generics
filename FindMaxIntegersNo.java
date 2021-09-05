@@ -1,7 +1,19 @@
 
-//Refactor 1 all the 3 to One Generic Method and find the maximum
+//Refactor to create Generic Class to take in 3 variables of Generic Type
 
-public class FindMaxIntegersNo {
+public class FindMaxIntegersNo<K extends Comparable<K>> {
+	
+	K x;
+	K y;
+	K z;
+	
+	//Constructor 
+	public FindMaxIntegersNo(K x, K y, K z) {
+		super();
+		this.x = x;
+		this.y = y;
+		this.z = z;
+	}
 
 	// determines the largest of three Comparable objects
 	public static <K extends Comparable<K>> K maximum(K x, K y, K z) {
